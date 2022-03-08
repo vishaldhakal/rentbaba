@@ -246,3 +246,28 @@
 .mess {
   height: 140px;
 }
+.navbar-toggler {
+  background-color: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.navbar-toggler:focus {
+  outline-width: 0px !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+  .secondary-heading {
+    font-size: 2rem;
+  }
+  .w-mine {
+    width: 100%;
+  }
+}
