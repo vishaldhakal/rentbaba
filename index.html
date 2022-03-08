@@ -13,7 +13,7 @@
 <body>
 
    <nav class="navbar navbar-expand-lg navbar-light py-2 sticky-top bg-navbarr">
-      <div class="container-fluid">
+      <div class="container">
          <a class="navbar-brand" href="#">Rentbaba<span class="text-danger">.</span> </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
       </div>
    </nav>
    <header class="top-header">
-      <div class="container-fluid py-5">
+      <div class="container py-5">
          <div class="row row-cols-1 row-cols-md-2">
             <div class="col">
                <h1 class="main-heading">Easy & hassle free home</h1>
@@ -67,16 +67,42 @@
                <h3 class="question-design">Moving to <span class="text-green">Toronto</span> Area ?</h3>
                <div class="row row-cols-2 w-mine">
                   <div class="col">
-                     <div class="mb-2"><input type="text" placeholder="Full name" name="name" class="fields"></div>
+                     <div class="mb-2 form-floating">
+                        <input type="text" name="name" class="form-control fields" id="name">
+                        <label for="name">Name</label>
+                     </div>
                   </div>
                   <div class="col">
-                     <div class="mb-2"><input type="text" placeholder="Phone" name="phone" class="fields"></div>
+                     <div class="mb-2 form-floating">
+                        <input type="text" name="phone" class="form-control fields" id="phone">
+                        <label for="phone">Phone</label>
+                     </div>
                   </div>
                   <div class="col">
-                     <div class="mb-2"><input type="text" placeholder="Select city" name="city" class="fields"></div>
+                     <div class="form-floating mb-2">
+                        <select class="form-select fields" id="city">
+                           <option value="toronto" selected>Toronto</option>
+                           <option value="northyork">North York</option>
+                           <option value="scarborough">Scarborough</option>
+                           <option value="etobicoke">Etobicoke</option>
+                           <option value="mississauga">Mississauga</option>
+                           <option value="brampton">Brampton</option>
+                           <option value="oakville">Oakville</option>
+                           <option value="milton">Milton</option>
+                        </select>
+                        <label for="city">Select city</label>
+                     </div>
                   </div>
                   <div class="col">
-                     <div class="mb-2"><input type="text" placeholder="Bedrooms" name="bedrooms" class="fields"></div>
+                     <div class="form-floating mb-2">
+                        <select class="form-select fields" id="city">
+                           <option value="1" selected>1 Bed</option>
+                           <option value="2">2 Bed</option>
+                           <option value="3">3 Bed</option>
+                           <option value="4">4 Bed</option>
+                        </select>
+                        <label for="city">Bedrooms</label>
+                     </div>
                   </div>
                </div>
                <div class="pt-3">
@@ -110,8 +136,8 @@
    </div>
 
    <div class="py-5"></div>
-   <div class="py-2"></div>
-   <div class="container-fluid">
+   <div class="py-4"></div>
+   <div class="container">
       <h2 class="secondary-heading position-relative">Cities we <span class="text-green">serve</span>
          <span class="absolute-design-border"><svg width="146" height="14" viewBox="0 0 146 14" fill="none"
                xmlns="http://www.w3.org/2000/svg">
@@ -199,8 +225,8 @@
       </section>
    </div>
    <div class="py-5"></div>
-   <div class="py-2"></div>
-   <div class="container-fluid">
+   <div class="py-4"></div>
+   <div class="container">
       <h2 class="secondary-heading position-relative">Serving clients all across <span class="text-green">Greater
             Toronto Area</span>
          <span class="absolute-design-border"><svg width="146" height="14" viewBox="0 0 146 14" fill="none"
@@ -244,8 +270,8 @@
       </div>
    </div>
    <div class="py-5"></div>
-   <div class="py-2"></div>
-   <div class="container-fluid">
+   <div class="py-4"></div>
+   <div class="container">
       <h2 class="secondary-heading position-relative">Blogs and <span class="text-green">Insights
          </span>
          <span class="absolute-design-border"><svg width="146" height="14" viewBox="0 0 146 14" fill="none"
@@ -317,7 +343,7 @@
       </div>
    </div>
    <div class="py-5"></div>
-   <div class="py-2"></div>
+   <div class="py-3"></div>
    <div class="contact_part py-5 my-5">
       <div class="d-flex justify-content-center">
          <img src="assets/images/image.png" alt="image" class="img-fluid w-25">
@@ -336,16 +362,43 @@
          <div class="col-md-3"></div>
          <div class="col-md-6 px-md-5">
             <form action="contactForm.php" method="POST">
-               <div class="row">
-                  <div class="mb-3"><input type="text" placeholder="Full Name" name="name" class="fields"></div>
-               </div>
                <div class="row row-cols-1 row-cols-sm-2">
+                  <div class="mb-3"><input type="text" placeholder="Name" name="name" class="fields"></div>
                   <div class="col">
-                     <div class="mb-3"><input type="email" aria-describedby="emailHelp" placeholder="Your email"
-                           name="email" class="fields"></div>
+                     <div class="mb-3"><input type="email" aria-describedby="emailHelp" placeholder="Email" name="email"
+                           class="fields"></div>
+                  </div>
+               </div>
+               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                  <div class="col">
+                     <div class="mb-3"><input type="text" aria-describedby="emailHelp" placeholder="Phone" name="email"
+                           class="fields"></div>
                   </div>
                   <div class="col">
-                     <div class="mb-3"><input type="text" name="phone" placeholder="Phone" class="fields"></div>
+                     <div class="form-floating mb-2">
+                        <select class="form-select fields" id="city">
+                           <option value="toronto" selected>Toronto</option>
+                           <option value="northyork">North York</option>
+                           <option value="scarborough">Scarborough</option>
+                           <option value="etobicoke">Etobicoke</option>
+                           <option value="mississauga">Mississauga</option>
+                           <option value="brampton">Brampton</option>
+                           <option value="oakville">Oakville</option>
+                           <option value="milton">Milton</option>
+                        </select>
+                        <label for="city">Select city</label>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="form-floating mb-2">
+                        <select class="form-select fields" id="city">
+                           <option value="1" selected>1 Bed</option>
+                           <option value="2">2 Bed</option>
+                           <option value="3">3 Bed</option>
+                           <option value="4">4 Bed</option>
+                        </select>
+                        <label for="city">Bedrooms</label>
+                     </div>
                   </div>
                </div>
                <div class="row">
@@ -353,7 +406,8 @@
                         class="fields mess"></textarea></div>
                </div>
                <div class="row">
-                  <div class="col text-center"><input type="submit" value="Send Message" class="btn main-btn bgn-lg">
+                  <div class="col text-center"><input type="submit" value="Send us a message"
+                        class="btn main-btn bgn-lg">
                   </div>
                </div>
             </form>
@@ -362,8 +416,8 @@
       </div>
    </div>
    <div class="py-5"></div>
-   <div class="py-2"></div>
-   <img src="assets/images/pattern.svg" alt="Realtors image" class="img-fluid">
+   <div class="py-3"></div>
+   <img src="assets/images/pattern.svg" alt="Pattern image" class="img-fluid min-100">
    <footer class="footerr bg-white">
       <div class="container">
          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
@@ -372,11 +426,9 @@
                   Rentbaba<span class="text-danger">.</span>
                </p>
                <p class="bottex mt-3 justifyy">
-                  Rentbaba is the online Database for new Pre construction
-                  detached, semi-detached, townhomes and condos in Canada.
-                  Homebaba does not represent any builder. The content of the
-                  pages of this website is for your general information, reference
-                  only.
+                  Rentbaba is not a realestate brokerage. Rentbaba connects prospecting tenants with the licensed
+                  realtors currently working in Greater Toronto Area . The content of the pages of this website is for
+                  your general information, reference only.
                </p>
             </div>
             <div class="col-md-1"></div>
@@ -463,7 +515,7 @@
             <div class="col-sm-4"></div>
          </div>
          <div class="row text-center mt-3 px-3 pb-5">
-            <p>&copy;2021 Rentbaba</p>
+            <p>&copy;2022 Rentbaba</p>
          </div>
       </div>
    </footer>
